@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-replace": "^0.5.4",
+    "gulp-sequence": "^0.4.6",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.10",
+    "gulp.spritesmith": "^6.2.1",
+    "vconsole": "^2.5.1",
+    "yargs": "^6.2.0"
+  }
+}
