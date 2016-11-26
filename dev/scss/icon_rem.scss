@@ -12,24 +12,64 @@ At the bottom of this section, we provide information about the spritesheet itse
 $spritesheet: width height image $spritesheet-sprites;
 */
             @mixin circle1 {
-                background-position: -411/(202-613)*100% 0;
+                background-position: -735/(202-1120)*100% -318/(203-817)*100%;;
                 width: px(202);
                 height: px(203);
             }
-            @mixin planet1 {
+            @mixin frame {
+                background-position: -252/(538-1120)*100% -682/(28-817)*100%;;
+                width: px(538);
+                height: px(28);
+            }
+            @mixin i_border {
+                background-position: -1059/(22-1120)*100% -176/(22-817)*100%;;
+                width: px(22);
+                height: px(22);
+            }
+            @mixin net {
                 background-position: 0 0;
+                width: px(533);
+                height: px(619);
+            }
+            @mixin planet1 {
+                background-position: -537/(407-1120)*100% 0;
                 width: px(407);
                 height: px(314);
             }
+            @mixin planet2 {
+                background-position: -948/(107-1120)*100% -176/(75-817)*100%;;
+                width: px(107);
+                height: px(75);
+            }
+            @mixin scan {
+                background-position: 0 -623/(55-817)*100%;;
+                width: px(898);
+                height: px(55);
+            }
+            @mixin shadow {
+                background-position: -537/(194-1120)*100% -318/(213-817)*100%;;
+                width: px(194);
+                height: px(213);
+            }
+            @mixin txt1 {
+                background-position: 0 -682/(135-817)*100%;;
+                width: px(248);
+                height: px(135);
+            }
             @mixin ui1 {
-                background-position: 0 -318/(79-397)*100%;;
+                background-position: -537/(306-1120)*100% -535/(79-817)*100%;;
                 width: px(306);
                 height: px(79);
+            }
+            @mixin ui2 {
+                background-position: -948/(172-1120)*100% 0;
+                width: px(172);
+                height: px(172);
             }
         %spritesheet {
             background-image: url('../images/icon.png');
             background-repeat: no-repeat;
-            background-size: px(613) px(397);
+            background-size: px(1120) px(817);
         }
 
 

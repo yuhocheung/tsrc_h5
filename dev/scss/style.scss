@@ -156,12 +156,24 @@ body{
 .mod-pages{
   width: px(7240);
   height: 100%;
+  .star{
+    display: block;
+    width: px(7240);
+    height: px(1210);
+    position: absolute;
+    background: url("../images/stars.gif") no-repeat;
+    background-size: cover;
+    z-index: 2;
+    top:0;
+    left: 0;
+  }
 }
 .mod-box{
   float: left;
   width: px(750);
   position: relative;
   height: 100%;
+  z-index: 22;
   .txt-box{
     position: absolute;
     p{
@@ -169,6 +181,7 @@ body{
       font-size: px(28);
       line-height: px(58);
       white-space: nowrap;
+      font-family: "Microsoft YaHei";
     }
   }
 }
@@ -209,12 +222,164 @@ body{
     @extend %spritesheet;
     @include planet1;
     position: absolute;
-    top:px(70);
-    right: px(-70);
+    top:px(50);
+    right: px(-80);
   }
   .txt-box {
     top: px(390);
     left: 1px;
+  }
+}
+.mod-page4{
+  .ui1{
+    @extend %spritesheet;
+    @include ui2;
+    position: absolute;
+    top:px(60);
+    left: px(120);
+  }
+  .ui1-shadow{
+    @extend %spritesheet;
+    @include shadow;
+    position: absolute;
+    top:px(140);
+    left: px(74);
+    z-index: 22;
+  }
+  .ui2{
+    @extend %spritesheet;
+    @include planet2;
+    position: absolute;
+    top: px(600);
+    left: px(260);
+  }
+  .txt-box {
+    z-index: 30;
+    top: px(186);
+    left: px(6);
+    .add{
+      margin-top: px(70);
+    }
+  }
+}
+.mod-page5{
+  .data-box{
+    margin: px(58) px(58) 0 px(50);
+    .info-box{
+      background: rgba(0,0,0,0.8);
+      width: px(208);
+      height: px(208);
+      border:1px solid rgba(255,255,255,0.5);
+      position: relative;
+      z-index: 22;
+      float: left;
+      margin-right: px(30);
+      span{
+        @extend %spritesheet;
+        @include i_border;
+        position: absolute;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+
+      }
+      .border1{
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+        top:-1px;
+        left: -1px;
+      }
+      .border2{
+        top: -1px;;
+        right: -1px;
+      }
+      .border3{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        bottom:-1px;
+        left: -1px;
+      }
+      .border4{
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        bottom:-1px;
+        right: -1px;
+      }
+    }
+    .m-data{
+      @extend %spritesheet;
+      @include txt1;
+      float: left;
+      position: relative;
+      .line-box{
+        position: absolute;
+        left: px(20);
+        i,span{
+          position: absolute;
+          background-color: #ffffff;
+          height: px(12);
+          max-width: px(200);
+        }
+      }
+      .line1-box{
+        top: px(66);
+        .line1{
+          width: px(200);
+          opacity: 0.5;
+          z-index: 22;
+        }
+      }
+      .line2-box{
+        top: px(94);
+      }
+      .line3-box{
+        top: px(124);
+      }
+    }
+  }
+
+  .scan-box{
+    width: px(544);
+    margin: px(-50) auto 0 auto;
+    position: relative;
+    z-index: 20;
+    span{
+      display: block;
+    }
+    .frame1{
+      @extend %spritesheet;
+      @include frame;
+      -webkit-transform-origin: center;
+      transform-origin: center;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    .net{
+      @extend %spritesheet;
+      @include net;
+      margin: px(-22) px(2);
+    }
+    .frame2{
+      @extend %spritesheet;
+      @include frame;
+    }
+    .white-hat{
+      position: absolute;
+      top: px(50);
+      left: px(-100);
+      background: url("../images/white_hat.png") no-repeat;
+      width: px(678);
+      height: px(514);
+      background-size: cover;
+    }
+  }
+  .scan-line{
+    position: absolute;
+    display: block;
+    z-index: 22;
+    @extend %spritesheet;
+    @include scan;
+    top:px(250);
+    left: px(-70);
   }
 }
 .music-control{

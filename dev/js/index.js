@@ -77,10 +77,10 @@
     var $body=$("body");
     $body.css("height",$(window).height());
     /*文字缩进动画*/
-    for(var i=1;i<3;i++){
+    for(var i=1;i<5;i++){
         var _target=$(".mod-page"+i).find(".txt-box p");
         for(var k=0;k<_target.length;k++){
-            _target.eq(k).css("padding-left",12*k+"%");
+            _target.eq(k).css("padding-left",10.5*k+"%");
         }
     }
 
